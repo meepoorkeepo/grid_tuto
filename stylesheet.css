@@ -13,16 +13,23 @@ body{
 .sidebar{
     background-color: #147ec0;
     grid-row: 1/13;
+    display: grid;
+    grid-template-rows:repeat(1,2fr) repeat(9,1fr);    
 
 }
 
 .sidebarchild{
-    padding: 10px;
     padding-left: 20px;
     font-size: 12px;
     font-weight: 500;
     color: white;
+    display: grid;
+    display: flex;
+    place-items: center;
 }
-#home{
-    padding-top: 40px;
+.sidebarchild > p {
+    padding-left: 5px;
+}
+.sidebar > img{
+    filter: invert(100%);
 }
